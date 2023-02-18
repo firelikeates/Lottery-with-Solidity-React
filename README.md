@@ -34,3 +34,5 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 
 ##It is responsive
 
+### If buttons or anything does not work, please refresh the page!
+
