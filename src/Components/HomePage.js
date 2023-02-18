@@ -39,13 +39,11 @@ const HomePage = (props) => {
     }, [balance])
 
     const enterlottery = async () => {
+        document.querySelector(".wait_to_process").classList.toggle("process_active")
         try {
             // enter the lottery
             let accounts = await web3.eth.getAccounts()
-            await Lottery.methods.enter().send({ from: accounts[0], value: web3.utils.toWei(value1, "ether") }).then(()=>{
-                document.querySelector(".wait_to_process").classList.toggle("process_active")
-            })
-
+            await Lottery.methods.enter().send({ from: accounts[0], value: web3.utils.toWei(value1, "ether") })
             //clear input
             await SetValue(0)
             // html balance restore
@@ -53,7 +51,6 @@ const HomePage = (props) => {
             document.getElementById("balance").innerHTML = `Total ETH: ${balance}`
             // set html players length
             await Lottery.methods.getPlayers().call().then(res => setPlayernumber(res.length))
-            document.querySelector(".wait_to_process").classList.toggle("process_active")
         } catch (err) {
             console.log(err)
             document.querySelector(".wait_to_process").classList.toggle("process_active")
@@ -96,7 +93,7 @@ const HomePage = (props) => {
                         <div className="middle_part_of_section">
                             <div className="enter_the_lottery">
                                 Enter the Lottery
-                                <Link style={{textDecoration:"none;"}} className='enter_lottery_btn'>Enter</Link >
+                                <button style={{textDecoration:"none"}} className='enter_lottery_btn'>Enter</button >
                             </div>
                             <div className="get_players">
                                 Get List of Players
