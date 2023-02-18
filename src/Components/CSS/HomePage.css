@@ -152,6 +152,8 @@ form input {
     justify-content: flex-start;
     padding-top: 15vh;
     align-items: center;
+    margin-bottom: 200px;
+
 }
 
 .wait_to_process img {
