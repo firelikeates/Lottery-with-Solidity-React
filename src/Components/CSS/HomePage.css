@@ -1,0 +1,470 @@
+.home-page-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    min-height: calc(100vh - 90px);
+    background-image: linear-gradient(to bottom, rgba(9, 11, 26, 0.8), rgba(62, 32, 197, 0.75));
+    z-index: 2;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 50px 100px;
+    max-width: 100%;
+    height: calc(100vh - 90px);
+}
+
+.container-header {
+    color: #f5f5f5;
+    font-size: 60px;
+    text-align: center;
+}
+
+.middle_part_of_section {
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 60px;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input {
+    margin-top: 24px;
+    margin-bottom: -12px;
+    width: 40%;
+    outline: none;
+    appearance: none;
+    border: none;
+    border-radius: 16px;
+    height: 40px;
+    padding: 12px 16px;
+    font-size: 14px;
+}
+
+.info_to_players {
+    color: rgb(191, 194, 197);
+    font-size: 18px;
+    font-weight: 450;
+    text-align: center;
+}
+
+.enter_the_lottery {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 10px;
+    color: #f5f5f5;
+    font-size: 32px;
+    text-align: center;
+}
+
+.enter_lottery_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 12px;
+    padding: 8px 8px;
+    text-align: center;
+    color: rgb(38, 5, 70);
+    background-color: #f5f5f5;
+    font-size: 22px;
+    font-weight: 550;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    appearance: none;
+    cursor: pointer;
+    user-select: none;
+    width: 240px;
+}
+
+.enter_lottery_btn:hover {
+    background-color: rgb(166, 184, 206);
+}
+
+.get_players {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 10px;
+    color: #f5f5f5;
+    font-size: 32px;
+    text-align: center;
+    margin-left: 12px;
+}
+
+.get_players a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12px;
+    padding: 8px 8px;
+    text-align: center;
+    color: rgb(38, 5, 70);
+    background-color: #f5f5f5;
+    font-size: 22px;
+    font-weight: 650;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    appearance: none;
+    cursor: pointer;
+    user-select: none;
+    text-decoration: none;
+    width: 240px;
+
+}
+
+.get_players a:hover {
+    background-color: rgb(166, 184, 206);
+
+}
+
+.wait_to_process {
+    position: absolute;
+    left: 100%;
+    top: -100%;
+    opacity: 0;
+    transition: 0.2s;
+    min-height: 100vh;
+    width: 100vw;
+    background-color: rgba(63, 63, 63, 0.97);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.wait_to_process div {
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 15vh;
+    align-items: center;
+}
+
+.wait_to_process img {
+    font-size: 42px;
+    color: white;
+}
+
+.wait_to_process h2 {
+    font-size: 32px;
+    font-weight: 800;
+    color: white;
+    margin-top: 32px;
+}
+
+.process_active {
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.pick-a-winner {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 1.2rem;
+
+
+}
+
+.pick-a-winner button {
+    background-color: rgb(2, 2, 46);
+    padding: 16px 20px;
+    outline: none;
+    appearance: none;
+    border-radius: 64px;
+    font-size: 21px;
+    font-weight: 600;
+    color: #f5f5f5;
+    border: 2px solid black;
+    width: 300px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.pick-a-winner button:hover {
+    background-color: rgb(21, 21, 226);
+    ;
+}
+
+@media (max-width:1000px) {
+    .container-header {
+        color: #f5f5f5;
+        font-size: 42px;
+        text-align: center;
+    }
+
+    form input {
+        margin-top: 20px;
+        margin-bottom: -10px;
+        width: 40%;
+        outline: none;
+        appearance: none;
+        border: none;
+        border-radius: 16px;
+        height: 40px;
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+
+    .info_to_players {
+        color: rgb(191, 194, 197);
+        font-size: 15px;
+        font-weight: 350;
+        text-align: center;
+    }
+
+    .enter_the_lottery {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 8px;
+        color: #f5f5f5;
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .enter_lottery_btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+        padding: 6px;
+        text-align: center;
+        color: rgb(38, 5, 70);
+        background-color: #f5f5f5;
+        font-size: 18px;
+        font-weight: 550;
+        border: none;
+        outline: none;
+        border-radius: 8px;
+        appearance: none;
+        cursor: pointer;
+        user-select: none;
+        width: 180px;
+    }
+
+    .enter_lottery_btn:hover {
+        background-color: rgb(166, 184, 206);
+    }
+
+    .get_players {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 18x;
+        color: #f5f5f5;
+        font-size: 24px;
+        text-align: center;
+        margin-left: 10px;
+    }
+
+    .get_players a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 12px;
+        padding: 6px 6px;
+        text-align: center;
+        color: rgb(38, 5, 70);
+        background-color: #f5f5f5;
+        font-size: 18px;
+        font-weight: 550;
+        border: none;
+        outline: none;
+        border-radius: 8px;
+        appearance: none;
+        cursor: pointer;
+        user-select: none;
+        text-decoration: none;
+        width: 180px;
+
+    }
+
+    .get_players a:hover {
+        background-color: rgb(166, 184, 206);
+
+    }
+
+    .pick-a-winner {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem 1.2rem;
+
+
+    }
+
+    .pick-a-winner button {
+        background-color: rgb(2, 2, 46);
+        padding: 12px 16px;
+        outline: none;
+        appearance: none;
+        border-radius: 64px;
+        font-size: 18px;
+        font-weight: 500;
+        color: #f5f5f5;
+        border: 2px solid black;
+        width: 220px;
+        cursor: pointer;
+        user-select: none;
+    }
+
+    .pick-a-winner button:hover {
+        background-color: rgb(21, 21, 226);
+        ;
+    }
+}
+@media (max-width:768px) {
+    .container-header {
+        color: #f5f5f5;
+        font-size: 32px;
+        text-align: center;
+    }
+
+    form input {
+        margin-top: 16px;
+        margin-bottom: -8px;
+        width: 40%;
+        outline: none;
+        appearance: none;
+        border: none;
+        border-radius: 14px;
+        height: 32px;
+        padding: 6px 8px;
+        font-size: 13px;
+    }
+
+    .info_to_players {
+        color: rgb(191, 194, 197);
+        font-size: 13px;
+        font-weight: 350;
+        text-align: center;
+    }
+
+    .enter_the_lottery {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 6px;
+        color: #f5f5f5;
+        font-size: 19px;
+        text-align: center;
+    }
+
+    .enter_lottery_btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 8px;
+        padding: 4.5px;
+        text-align: center;
+        color: rgb(38, 5, 70);
+        background-color: #f5f5f5;
+        font-size: 16px;
+        font-weight: 450;
+        border: none;
+        outline: none;
+        border-radius: 8px;
+        appearance: none;
+        cursor: pointer;
+        user-select: none;
+        width: 130px;
+    }
+
+    .enter_lottery_btn:hover {
+        background-color: rgb(166, 184, 206);
+    }
+
+    .get_players {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 6px;
+        color: #f5f5f5;
+        font-size: 19px;
+        text-align: center;
+        margin-left: 8px;
+    }
+
+    .get_players a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 8px;
+        padding: 4.5px;
+        text-align: center;
+        color: rgb(38, 5, 70);
+        background-color: #f5f5f5;
+        font-size: 16px;
+        font-weight: 450;
+        border: none;
+        outline: none;
+        border-radius: 8px;
+        appearance: none;
+        cursor: pointer;
+        user-select: none;
+        text-decoration: none;
+        width: 130px;
+
+    }
+
+    .get_players a:hover {
+        background-color: rgb(166, 184, 206);
+
+    }
+
+    .pick-a-winner {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.8rem 1rem;
+
+
+    }
+
+    .pick-a-winner button {
+        background-color: rgb(2, 2, 46);
+        padding: 8px 10px;
+        outline: none;
+        appearance: none;
+        border-radius: 42px;
+        font-size: 16px;
+        font-weight: 400;
+        color: #f5f5f5;
+        border: 2px solid black;
+        width: 160px;
+        cursor: pointer;
+        user-select: none;
+    }
+
+    .pick-a-winner button:hover {
+        background-color: rgb(21, 21, 226);
+        ;
+    }
+}
+@media (max-width:400px) {
+    .container-header {
+        color: #f5f5f5;
+        font-size: 24px;
+        text-align: center;
+    }
+}
