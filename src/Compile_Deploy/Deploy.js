@@ -3,8 +3,8 @@ const Web3 = require('web3');
 const { abi, evm } = require('./Compile');
  
 const provider = new HDWalletProvider(
-  'dress pistol pear patrol cigar purchase retire ignore also key thing remind',
-  'https://goerli.infura.io/v3/e02241dd0df3442aaa31c4fc84bdd9cc'
+  '*************************',
+  '***********'
 );
  
 const web3 = new Web3(provider);
